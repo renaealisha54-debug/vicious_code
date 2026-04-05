@@ -44,7 +44,7 @@ fun MainScreen() {
             modifier = Modifier.weight(1f).fillMaxWidth(),
             update = { editor ->
                 editor.setText(code)
-                editor.textChangedListener = { code = it.toString() }
+                editor.setOnTextChangeListener { code = it.toString() }
             }
         )
 

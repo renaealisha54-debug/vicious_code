@@ -13,6 +13,7 @@ import androidx.compose.ui.unit.dp
 import com.google.gson.Gson
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
+import android.widget.Toast
 import java.net.URL
 
 class ExtensionManagerActivity : ComponentActivity() {
@@ -50,7 +51,7 @@ class ExtensionManagerActivity : ComponentActivity() {
                             Row(modifier = Modifier.padding(16.dp), horizontalArrangement = Arrangement.SpaceBetween) {
                                 Column {
                                     Text(ext.name)
-                                    Text("\( {ext.language} v \){ext.version}", style = MaterialTheme.typography.bodySmall)
+                                    Text("${ext.language} v ${ext.version}", style = MaterialTheme.typography.bodySmall)
                                 }
                                 Button(onClick = { installExtension(ext) }) { Text("Install") }
                             }
