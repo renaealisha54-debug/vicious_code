@@ -1,0 +1,25 @@
+Êþº¾   2 R  š~~R8{"backend":"cf","compilation-mode":"release","has-checksums":false,"pg-map-id":"d4d152b","r8-mode":"full","sha-1":"engineering","version":"8.3.8-dev"}     
+SourceFile  .org/gradle/wrapper/Download$ProxyAuthenticator      java/net/Authenticator      this$0   Lorg/gradle/wrapper/Download;   <init>   (Lorg/gradle/wrapper/Download;)V    		       ()V  
+  
+       getPasswordAuthentication  #()Ljava/net/PasswordAuthentication;   getRequestorType  (()Ljava/net/Authenticator$RequestorType;     
+      $java/net/Authenticator$RequestorType      PROXY  &Ljava/net/Authenticator$RequestorType;     	       getRequestingURL   ()Ljava/net/URL;     
+       java/net/URL  !  
+getProtocol   ()Ljava/lang/String;  # $
+ " %   org/gradle/wrapper/Download  '   systemProperties   Ljava/util/Map;  ) *	 ( +   java/lang/StringBuilder  -
+ .     append  -(Ljava/lang/String;)Ljava/lang/StringBuilder;  0 1
+ . 2  
+.proxyUser  4   toString  6 $
+ . 7  
+java/util/Map  9   get  &(Ljava/lang/Object;)Ljava/lang/Object;  ; <
+ : =   java/lang/String  ?   .proxyPassword  A     C   java/net/PasswordAuthentication  E  
+toCharArray   ()[C  G H
+ @ I   (Ljava/lang/String;[C)V  
+ K
+ F L     
+   N   Code   LineNumberTable 1             	       
+ 
+   P           
+*Y+µ 
+·  ±             P   œ       x*¶  ²  ¦ l*Y¶  ¶ &L´ 
+´ ,» .Y+_· /¶ 3 5¶ 3¶ 8¹ >  À @YMÆ <*´ 
+´ ,» .Y+_· /¶ 3 B¶ 3¶ 8¹ >  À @YKÇ   DK» FY*¶ J,_· M°*· O°     Q               >   A            
