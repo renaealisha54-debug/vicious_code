@@ -1,0 +1,11 @@
+# Ignore Gradle build files
+.gradle/
+build/
+**/build/
+
+# Ignore local properties (often contains machine-specific paths)
+local.properties
+
+# Keep the Wrapper, but ignore the distribution cache
+gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.jar
