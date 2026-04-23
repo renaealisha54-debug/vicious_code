@@ -1,0 +1,13 @@
+# Build folders
+build/
+.gradle/
+.idea/
+
+# Compiled class files
+*.class
+*.jar
+*.war
+*.swp
+
+# Local configuration
+local.properties
